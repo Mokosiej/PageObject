@@ -4,7 +4,6 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import lombok.val;
-import org.w3c.dom.html.HTMLInputElement;
 import ru.netology.data.DataHelper;
 
 import static com.codeborne.selenide.Condition.attribute;
@@ -18,7 +17,6 @@ public class DashboardPage {
     private final String balanceFinish = " р.";
     private final SelenideElement heading = $("[data-test-id=dashboard]");
     private final ElementsCollection cards = $$(".list__item div");
-    private final ElementsCollection cardButton = $$("[datadata-test-id=action-deposit]div");
     public DashboardPage() {
 
         heading.shouldBe(visible);
