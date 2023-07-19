@@ -22,7 +22,7 @@ public class DataHelper {
 
     @Value
     public static class VerificationCode {
-        String code;
+       String code;
     }
     public static VerificationCode getVerificationCode() {
 
